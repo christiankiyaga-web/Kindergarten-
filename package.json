@@ -1,25 +1,12 @@
 {
-  "name": "samlax-kindergarten",
-  "productName": "Samlax Kindergarten",
+  "name": "samlax-mobile",
   "version": "1.0.0",
-  "description": "Samlax Kindergarten school management system",
-  "author": "Samlax Kindergarten",
-  "main": "main.js",
-  "scripts": {
-    "prep": "node prep.js",
-    "start": "node prep.js && electron .",
-    "build": "node prep.js && electron-builder --win --publish never"
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "^6.1.0",
+    "@capacitor/core": "^6.1.0"
   },
   "devDependencies": {
-    "electron": "^33.0.0",
-    "electron-builder": "^25.0.0"
-  },
-  "build": {
-    "appId": "ug.samlax.school",
-    "productName": "Samlax Kindergarten",
-    "files": ["main.js", "index.html"],
-    "directories": { "buildResources": "build", "output": "dist" },
-    "win": { "target": ["nsis", "portable"] },
-    "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true, "createDesktopShortcut": true }
+    "@capacitor/cli": "^6.1.0"
   }
 }
